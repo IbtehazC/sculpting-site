@@ -18,62 +18,66 @@
         <ul>
           <li><a href="/sculpting-site/index.html">Home</a></li>
           <li><a href="/sculpting-site/gallery.html">Gallery</a></li>
-          <li><a href="/sculpting-site/resume.html">Resume</a></li>
+          <li><a href="/sculpting-site/bio.html">Bio</a></li>
           <li><a href="/sculpting-site/contact.html">Contact</a></li>
         </ul>
       </header>
-      <section class="upper">
-        <div class="upper-content">
-          <div class="upper-description">
-            <h1><b> Leonardo di Caprio</b></h1>
-            <p>Lorem ipsum dolor sit amet</p>
-            <button>See Gallery</button>
-          </div>
-          <img src="./scuplture-1.jpg" alt="" />
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width: 100%; height: 640px" />
+          <div class="text">Caption Text</div>
         </div>
-      </section>
-      <section class="middle">
-        <div class="middle-section">
-          <span>About</span>
-          <hr />
-          <div class="middle-section-content">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              minima ex dolor excepturi temporibus neque voluptatem, earum
-              quidem. Aliquid nulla rem modi! Tempora incidunt, necessitatibus
-              facilis quam quae dolore officiis.
-            </p>
-          </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width: 100%; height: 640px" />
+          <div class="text">Caption Two</div>
         </div>
-      </section>
-      <section class="lower">
-        <div class="middle-section">
-          <span>Testimonial</span>
-          <hr />
-          <div class="lower-section-content">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              minima ex dolor excepturi temporibus neque voluptatem, earum
-              quidem. Aliquid nulla rem modi! Tempora incidunt, necessitatibus
-              facilis quam quae dolore officiis.
-            </p>
-          </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width: 100%; height: 640px" />
+          <div class="text">Caption Three</div>
         </div>
-      </section>
-      <div class="social-section">
-        <span>Social</span>
-        <hr/>
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
       </div>
-      <footer>All rights reserved</footer>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <footer>&copy; TANJILA SUMAIA SIDDIQYE - All rights reserved</footer>
     </div>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
     </script>
   </body>
 </html>
