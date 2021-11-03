@@ -8,7 +8,6 @@
 
 body {
   background: white;
-  min-height: 200vh;
 }
 
 header {
@@ -17,7 +16,7 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   transition: 0.6s;
   padding: 40px 100px;
@@ -27,16 +26,7 @@ header.sticky {
   padding: 5px;
   background: black;
 }
-header .logo {
-  position: relative;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.6s;
-}
+
 header ul {
   position: relative;
   display: flex;
@@ -58,9 +48,7 @@ header ul li a {
   transition: 0.6s;
 }
 header.sticky .logo,
-header.sticky ul
-li
-a {
+header.sticky ul li a {
   color: white;
 }
 
@@ -68,9 +56,21 @@ a {
   padding-top: 12%;
 }
 
-section {
-  padding-left: 20%;
-  padding-right: 20%;
+.social-banner {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.social-header {
+  height: 100px;
+  padding: 32px 0;
+}
+.icons {
+  display: flex;
+  height: 72px;
 }
 
 span {
@@ -80,7 +80,6 @@ span {
 /* image slideshow */
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -183,6 +182,8 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100px;
+  font-size: small;
 }
 
 .banner {
@@ -244,6 +245,71 @@ footer {
     rgba(255, 255, 255, 0) 100%
   );
   transition: 0.3s;
+}
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* BIO */

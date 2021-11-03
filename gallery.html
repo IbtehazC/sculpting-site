@@ -14,7 +14,6 @@
   <body>
     <div class="grid-template">
       <header>
-        <a href="#" class="logo">Logo</a>
         <ul>
           <li><a href="/sculpting-site/index.html">Home</a></li>
           <li><a href="/sculpting-site/gallery.html">Gallery</a></li>
@@ -24,70 +23,60 @@
       </header>
       <section>
         <div class="banner">
-          <h1><b> Leonardo di Caprio</b></h1>
-          <p>Lorem ipsum dolor sit amet</p>
+          <h1><b> Sculptures </b></h1>
+          <p>by Tanzila</p>
         </div>
       </section>
       <section>
         <div class="gallery">
           <!-- Gallery column 1 -->
           <div class="gallery__column">
-            <a href="/" target="_blank" class="gallery__link">
+            <a onclick="openModal01()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIn%20sharch%20of%20shelter%20c4.JPG?alt=media&token=a2be47e9-9086-48e7-9f80-7a2d2da25edd"
                   alt="Portrait by Jessica Felicio"
                   class="gallery__image"
+                  id="myImg01"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Jessica Felicio
                 </figcaption>
               </figure>
             </a>
-
-            <a
-              href="https://unsplash.com/@oladimeg"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal02()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG20181108212103.jpg?alt=media&token=e3b50540-7f52-43aa-a6b1-9227b71eede0"
                   alt="Portrait by Oladimeji Odunsi"
                   class="gallery__image"
+                  id="myImg02"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Oladimeji Odunsi
                 </figcaption>
               </figure>
             </a>
-
-            <a
-              href="https://unsplash.com/@a2eorigins"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal03()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2Fdream%2Cmoney%2C%20life%20c4.JPG?alt=media&token=4c51604f-3535-409e-a4b6-6b8c4bbe24ea"
                   alt="Portrait by Alex Perez"
                   class="gallery__image"
+                  id="myImg03"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Alex Perez
                 </figcaption>
               </figure>
             </a>
-            <a
-              href="https://unsplash.com/@a2eorigins"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal04()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7185.JPG?alt=media&token=8b5fa943-4509-4663-a831-b2c1d09c4d3d"
                   alt="Portrait by Alex Perez"
                   class="gallery__image"
+                  id="myImg04"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Alex Perez
@@ -98,82 +87,65 @@
 
           <!-- Gallery column 2 -->
           <div class="gallery__column">
-            <a
-              href="https://unsplash.com/@noahbuscher"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal05()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FRecall%20of%20memoris%20c1.jpg?alt=media&token=cec476f6-3e4f-48e3-a57e-ee7376b3e3aa"
                   alt="Portrait by Noah Buscher"
                   class="gallery__image"
+                  id="myImg05"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Noah Buscher
                 </figcaption>
               </figure>
             </a>
-
-            <a
-              href="https://unsplash.com/@von_co"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal06()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2Fchaildhood%20memoris%20c1.jpg?alt=media&token=8c6bc256-78de-4911-8175-4cbb84d78ced"
                   alt="Portrait by Ivana Cajina"
                   class="gallery__image"
+                  id="myImg06"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Ivana Cajina
                 </figcaption>
               </figure>
             </a>
-
-            <a
-              href="https://unsplash.com/@samburriss"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal07()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2Fstop%20abuse%201.JPG?alt=media&token=843ec996-8eed-4403-9d11-f88001732593"
                   alt="Portrait by Sam Burriss"
                   class="gallery__image"
+                  id="myImg07"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Sam Burriss
                 </figcaption>
               </figure>
             </a>
-            <a
-              href="https://unsplash.com/@samburriss"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal08()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7169.JPG?alt=media&token=e5a02766-ad13-4431-9f59-b5f606e538a5"
                   alt="Portrait by Sam Burriss"
                   class="gallery__image"
+                  id="myImg08"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Sam Burriss
                 </figcaption>
               </figure>
             </a>
-            <a
-              href="https://unsplash.com/@samburriss"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal09()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7187.JPG?alt=media&token=2db6d2c2-8381-46c6-a0ac-cb50223b2a82"
                   alt="Portrait by Sam Burriss"
                   class="gallery__image"
+                  id="myImg09"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Sam Burriss
@@ -184,66 +156,52 @@
 
           <!-- Gallery column 3 -->
           <div class="gallery__column">
-            <a
-              href="https://unsplash.com/@marilezhava"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal10()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7158.JPG?alt=media&token=fc98d895-62ea-4866-a9c4-fbc6b4f96bc7"
                   alt="Portrait by Mari Lezhava"
                   class="gallery__image"
+                  id="myImg10"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Mari Lezhava
                 </figcaption>
               </figure>
             </a>
-
-            <a
-              href="https://unsplash.com/@ethanhaddox"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal11()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2Fself%20conflict%20s1%20c3.JPG?alt=media&token=aaab7c40-8100-4621-847c-176eadaf3c84"
                   alt="Portrait by Ethan Haddox"
                   class="gallery__image"
+                  id="myImg11"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Ethan Haddox
                 </figcaption>
               </figure>
             </a>
-
-            <a
-              href="https://unsplash.com/@mr_geshani"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal12()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2Fstorm%20c1.JPG?alt=media&token=2e276757-c534-4363-aa8c-3ff5e132ecea"
                   alt="Portrait by Amir Geshani"
                   class="gallery__image"
+                  id="myImg12"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Amir Geshani
                 </figcaption>
               </figure>
             </a>
-            <a
-              href="https://unsplash.com/@mr_geshani"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal13()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7179.JPG?alt=media&token=8bf29f7d-72fe-4f22-ba27-d26e2446bc7e"
                   alt="Portrait by Amir Geshani"
                   class="gallery__image"
+                  id="myImg13"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Amir Geshani
@@ -254,16 +212,13 @@
 
           <!-- Gallery column 4 -->
           <div class="gallery__column">
-            <a
-              href="https://unsplash.com/@frxgui"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal14()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2F46040794_2333817136690542_2560535974320799744_n.jpg?alt=media&token=7fc4a61f-f4d0-4f20-afe5-7c9856432096"
                   alt="Portrait by Guilian Fremaux"
                   class="gallery__image"
+                  id="myImg14"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Guilian Fremaux
@@ -271,16 +226,13 @@
               </figure>
             </a>
 
-            <a
-              href="https://unsplash.com/@majestical_jasmin"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal15()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7178.JPG?alt=media&token=fbfd8023-eb44-4045-83af-e69119ae3e77"
                   alt="Portrait by Jasmin Chew"
                   class="gallery__image"
+                  id="myImg15"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Jasmin Chew
@@ -288,32 +240,26 @@
               </figure>
             </a>
 
-            <a
-              href="https://unsplash.com/@dimadallacqua"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal16()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2Fbis.%20mat.jpg?alt=media&token=07049a3e-99a0-423e-bbc4-95d2b4ea7a52"
                   alt="Portrait by Dima DallAcqua"
                   class="gallery__image"
+                  id="myImg16"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Dima DallAcqua
                 </figcaption>
               </figure>
             </a>
-            <a
-              href="https://unsplash.com/@dimadallacqua"
-              target="_blank"
-              class="gallery__link"
-            >
+            <a onclick="openModal17()" class="gallery__link">
               <figure class="gallery__thumb">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Sculptures%2FIMG_7181.JPG?alt=media&token=6c3c63a2-a301-46b0-9643-7e435d056f6f"
                   alt="Portrait by Dima DallAcqua"
                   class="gallery__image"
+                  id="myImg17"
                 />
                 <figcaption class="gallery__caption">
                   Portrait by Dima DallAcqua
@@ -323,6 +269,16 @@
           </div>
         </div>
       </section>
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="modalClose()">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01" />
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
       <footer>&copy; TANJILA SUMAIA SIDDIQYE - All rights reserved</footer>
     </div>
     <script type="text/javascript">
@@ -330,21 +286,125 @@
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
-      var slideIndex = 0;
-      showSlides();
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var myImg01 = document.getElementById("myImg01");
+      var myImg02 = document.getElementById("myImg02");
+      var myImg03 = document.getElementById("myImg03");
+      var myImg04 = document.getElementById("myImg04");
+      var myImg05 = document.getElementById("myImg05");
+      var myImg06 = document.getElementById("myImg06");
+      var myImg07 = document.getElementById("myImg07");
+      var myImg08 = document.getElementById("myImg08");
+      var myImg09 = document.getElementById("myImg09");
+      var myImg10 = document.getElementById("myImg10");
+      var myImg11 = document.getElementById("myImg11");
+      var myImg12 = document.getElementById("myImg12");
+      var myImg13 = document.getElementById("myImg13");
+      var myImg14 = document.getElementById("myImg14");
+      var myImg15 = document.getElementById("myImg15");
+      var myImg16 = document.getElementById("myImg16");
+      var myImg17 = document.getElementById("myImg17");
+
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      function openModal01() {
+        modal.style.display = "block";
+        modalImg.src = myImg01.src;
+        captionText.innerHTML = myImg01.alt;
+      }
+      function openModal02() {
+        modal.style.display = "block";
+        modalImg.src = myImg02.src;
+        captionText.innerHTML = myImg02.alt;
+      }
+      function openModal03() {
+        modal.style.display = "block";
+        modalImg.src = myImg03.src;
+        captionText.innerHTML = myImg03.alt;
+      }
+      function openModal04() {
+        modal.style.display = "block";
+        modalImg.src = myImg04.src;
+        captionText.innerHTML = myImg04.alt;
+      }
+      function openModal05() {
+        modal.style.display = "block";
+        modalImg.src = myImg05.src;
+        captionText.innerHTML = myImg05.alt;
+      }
+      function openModal06() {
+        modal.style.display = "block";
+        modalImg.src = myImg06.src;
+        captionText.innerHTML = myImg06.alt;
+      }
+      function openModal07() {
+        modal.style.display = "block";
+        modalImg.src = myImg07.src;
+        captionText.innerHTML = myImg07.alt;
+      }
+      function openModal08() {
+        modal.style.display = "block";
+        modalImg.src = myImg08.src;
+        captionText.innerHTML = myImg08.alt;
+      }
+      function openModal09() {
+        modal.style.display = "block";
+        modalImg.src = myImg09.src;
+        captionText.innerHTML = myImg09.alt;
+      }
+      function openModal10() {
+        modal.style.display = "block";
+        modalImg.src = myImg10.src;
+        captionText.innerHTML = myImg10.alt;
+      }
+      function openModal11() {
+        modal.style.display = "block";
+        modalImg.src = myImg11.src;
+        captionText.innerHTML = myImg11.alt;
+      }
+      function openModal12() {
+        modal.style.display = "block";
+        modalImg.src = myImg12.src;
+        captionText.innerHTML = myImg12.alt;
+      }
+      function openModal13() {
+        modal.style.display = "block";
+        modalImg.src = myImg13.src;
+        captionText.innerHTML = myImg14.alt;
+      }
+      function openModal14() {
+        modal.style.display = "block";
+        modalImg.src = myImg14.src;
+        captionText.innerHTML = myImg14.alt;
+      }
+      function openModal15() {
+        modal.style.display = "block";
+        modalImg.src = myImg15.src;
+        captionText.innerHTML = myImg15.alt;
+      }
+      function openModal16() {
+        modal.style.display = "block";
+        modalImg.src = myImg16.src;
+        captionText.innerHTML = myImg16.alt;
+      }
+      function openModal17() {
+        modal.style.display = "block";
+        modalImg.src = myImg17.src;
+        captionText.innerHTML = myImg17.alt;
+      }
+
+      // // Get the <span> element that closes the modal
+      // var span = document.getElementsByClassName("close")[0];
+
+      // // When the user clicks on <span> (x), close the modal
+      function modalClose() {
+        console.log("Closing modal");
+        modal.style.display = "none";
       }
     </script>
   </body>
