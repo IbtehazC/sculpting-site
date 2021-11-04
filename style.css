@@ -80,6 +80,7 @@ span {
 /* image slideshow */
 /* Slideshow container */
 .slideshow-container {
+  height: 824 px;
   position: relative;
   margin: auto;
 }
@@ -203,9 +204,9 @@ footer {
   padding: 2px;
   transition: 0.3s;
 }
-.gallery:hover .gallery__image {
+/* .gallery:hover .gallery__image {
   filter: grayscale(1);
-}
+} */
 .gallery__column {
   display: flex;
   flex-direction: column;
@@ -215,9 +216,9 @@ footer {
   margin: 2px;
   overflow: hidden;
 }
-.gallery__link:hover .gallery__image {
+/* .gallery__link:hover .gallery__image {
   filter: grayscale(0);
-}
+} */
 .gallery__link:hover .gallery__caption {
   opacity: 1;
 }
@@ -262,8 +263,8 @@ footer {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -287,14 +288,19 @@ footer {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
