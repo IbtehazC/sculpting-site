@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <title>Gallery</title>
   </head>
   <body>
     <div class="grid-template">
@@ -29,7 +29,7 @@
       </section>
       <section>
         <div class="gallery">
-          <!-- Gallery column 1 -->
+          <!-- Sculpture Gallery column 1 -->
           <div class="gallery__column">
             <a onclick="openModal01()" class="gallery__link">
               <figure class="gallery__thumb">
@@ -85,7 +85,7 @@
             </a>
           </div>
 
-          <!-- Gallery column 2 -->
+          <!-- Sculpture Gallery column 2 -->
           <div class="gallery__column">
             <a onclick="openModal05()" class="gallery__link">
               <figure class="gallery__thumb">
@@ -154,7 +154,7 @@
             </a>
           </div>
 
-          <!-- Gallery column 3 -->
+          <!-- Sculpture Gallery column 3 -->
           <div class="gallery__column">
             <a onclick="openModal10()" class="gallery__link">
               <figure class="gallery__thumb">
@@ -210,7 +210,7 @@
             </a>
           </div>
 
-          <!-- Gallery column 4 -->
+          <!-- Sculpture Gallery column 4 -->
           <div class="gallery__column">
             <a onclick="openModal14()" class="gallery__link">
               <figure class="gallery__thumb">
@@ -269,6 +269,71 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="banner">
+          <h1><b> Paintings </b></h1>
+          <p>by Tanzila</p>
+        </div>
+      </section>
+      <section>
+        <div class="gallery">
+          <!-- Sculpture Gallery column 1 -->
+          <div class="gallery__column">
+            <a onclick="openModal18()" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Paintings%2Ffor%20print%201.jpg?alt=media&token=7f26cf23-c95d-476f-8267-63065d8497cd"
+                  alt="Portrait by Jessica Felicio"
+                  class="gallery__image"
+                  id="myImg18"
+                />
+                <figcaption class="gallery__caption">
+                  Portrait by Jessica Felicio
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- Sculpture Gallery column 2 -->
+          <div class="gallery__column">
+            <a onclick="openModal19()" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Paintings%2Fprint2.jpg?alt=media&token=8c2d0172-e8b4-42be-8f80-97b9d28f865a"
+                  alt="Portrait by Noah Buscher"
+                  class="gallery__image"
+                  id="myImg19"
+                />
+                <figcaption class="gallery__caption">
+                  Portrait by Noah Buscher
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+
+          <!-- Sculpture Gallery column 3 -->
+          <div class="gallery__column">
+            <a onclick="openModal20()" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/painting-website-d43d4.appspot.com/o/Paintings%2Fprint3.jpg?alt=media&token=ba660029-5b53-4022-b228-815c740a0f4c"
+                  alt="Portrait by Mari Lezhava"
+                  class="gallery__image"
+                  id="myImg20"
+                />
+                <figcaption class="gallery__caption">
+                  Portrait by Mari Lezhava
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+
+          </div>
+        </div>
+      </section>
+      <div class="empty-spacing">
+        <hr>
+      </div>
       <div id="myModal" class="modal">
         <!-- The Close Button -->
         <span class="close" onclick="modalClose()">&times;</span>
@@ -307,6 +372,9 @@
       var myImg15 = document.getElementById("myImg15");
       var myImg16 = document.getElementById("myImg16");
       var myImg17 = document.getElementById("myImg17");
+      var myImg18 = document.getElementById("myImg18");
+      var myImg19 = document.getElementById("myImg19");
+      var myImg20 = document.getElementById("myImg20");
 
       var modalImg = document.getElementById("img01");
 
@@ -396,6 +464,21 @@
         modal.style.display = "block";
         modalImg.src = myImg17.src;
         captionText.innerHTML = myImg17.alt;
+      }
+      function openModal18() {
+        modal.style.display = "block";
+        modalImg.src = myImg18.src;
+        captionText.innerHTML = myImg18.alt;
+      }
+      function openModal19() {
+        modal.style.display = "block";
+        modalImg.src = myImg19.src;
+        captionText.innerHTML = myImg19.alt;
+      }
+      function openModal20() {
+        modal.style.display = "block";
+        modalImg.src = myImg20.src;
+        captionText.innerHTML = myImg20.alt;
       }
 
       // // Get the <span> element that closes the modal
